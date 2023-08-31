@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="registerForm">
+        <div class="border">
+        <div class="linha" id="login">Registro</div>
+        <br>
+        <div class="linha">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Insira seu nome..." required/>
+        </div>
+        <br>
+        <div class="linha">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="Insira seu e-mail..." required>
+        </div>
+        <br>
+        <div class="linha">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Insira sua senha..." required/>
+        </div>
+        <br>
+        <div class="linha">
+          <label for="senhaRepetida">Repita sua senha</label>
+          <input type="password" id="senhaRepetida" name="senhaRepetida" placeholder="Repita sua senha..." required/>
+        </div>
+        <br>
+        <div class="linha">
+          <button type="submit">Registrar</button>
+        </div>
+        <br>
+        </div>
+      </form>
+      <script src="script.js"></script>
+</body>
+</html>

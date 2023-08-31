@@ -1,7 +1,6 @@
 body {
   margin: 0;
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,9 +39,9 @@ input:hover {
 
 .border {
   padding: 50px;
-  height: 300px;
+  height: 350px;
   width: 250px;
-  border: 2px;
+  border: 1px;
   border-radius: 20px;
   background-color: #352f44;
   box-shadow: 4px 4px 0 2px #24202c;
@@ -61,7 +60,7 @@ button {
   padding: 10px;
   margin-top: 12px;
   cursor: pointer;
-  transition: .5s;
+  transition: .3s;
 }
 
 button:hover {
@@ -73,8 +72,11 @@ a {
   margin-top: 10px;
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  padding: 30px;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer
 }
 
 a:hover {
@@ -90,6 +92,11 @@ a:hover {
   text-align: center;
 }
 
+#login {
+  text-align: center;
+  font-size: 24px;
+}
+
 #texto4 {
-  font-size: 5px;
+  font-size: 10px;
 }
