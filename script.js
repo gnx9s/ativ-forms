@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     registerForm.addEventListener("submit", function(event) {
       event.preventDefault();
   
-      window.location.href = "index.html"; 
+      window.location.href = "confirmation.html"; 
     });
   });
