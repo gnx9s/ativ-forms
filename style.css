@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5c5470;
+  background-color: #e3e3e3;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: white;
   font-size: 16px;
@@ -25,24 +25,20 @@ form .linha {
 }
 
 input {
-  border: 4px solid #352f44;
+  border: 4px ;
   border-radius: 6px;
   padding: 6px;
   transition: .7s;
-}
-
-input:hover {
-  border-color: darkslateblue;
 }
 
 main#container {
   padding: 50px;
   height: 350px;
   width: 250px;
-  border: 1px;
+  border: solid 1px;
   border-radius: 10px;
-  background-color: #352f44;
-  box-shadow: 4px 4px 0 2px #24202c;
+  background-color: #393e46;
+  box-shadow: 4px 4px 0 0 #393e46;
 }
 
 .linha:last-child {
@@ -50,7 +46,7 @@ main#container {
 }
 
 button {
-  background-color: #352f44;
+  background-color: #393e46;
   border-color: white;
   box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 1);
   border-radius: 16px;
@@ -63,7 +59,6 @@ button {
 
 button:hover {
   translate: 0 -5px;
-  border-color: darkslateblue;
 }
 
 a {
@@ -100,7 +95,7 @@ a:hover {
   top: 20px;
   right: 20px;
   padding: 10px 15px;
-  background-color: #352f44;
+  background-color: #393e46;
   color: white;
   border: none;
   border-radius: 5px;
