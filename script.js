@@ -1,13 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const registerForm = document.getElementById("registerForm");
-      
-    registerForm.addEventListener("submit", function(event) {
-      event.preventDefault();
-  
-      window.location.href = "confirmation.html"; 
-    });
-  });
-
   document.addEventListener("DOMContentLoaded", function() {
     const modeToggle = document.querySelector('.modeToggle');
     const body = document.body;
@@ -16,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // const input2 = document.getElementById('name');
     const button = document.getElementById('button');
 
-    const inputs = document.getElementsByTagName("input");
+    const inputs = document.getElementsByTagName('input');
     const buttons = document.getElementsByTagName('button');
 
     modeToggle.addEventListener('click', function() {
@@ -27,20 +17,20 @@ document.addEventListener("DOMContentLoaded", function() {
       if(body.classList.contains('darkMode'))
       {
         body.style.background = '#606470';
-        body.style.backgroundColor = '#222831';
+        body.style.backgroundColor = '#363b4e';
         body.style.transition = '0.7s';
         container.style.border = 'solid #303841';
         container.style.boxShadow = '4px 4px 0 0 #050d18';
         container.style.transition = '0.7s';
-        container.style.backgroundColor = '#363b4e';
+        container.style.backgroundColor = '#222831';
         document.querySelectorAll("input")
-          .forEach(input => input.style.borderColor = '#363b4e');        
+          .forEach(input => input.style.borderColor = '#222831');        
         // for(var i =0; i< inputs.length; i++) 
         //   inputs[i].style.borderColor = '#38598b';        
         // input.style.borderColor = '#38598b';
         // input2.style.borderColor = '#38598b';
         for(var i =0; i< buttons.length; i++) 
-          buttons[i].style.backgroundColor = '#363b4e';
+          buttons[i].style.backgroundColor = '#222831';
       }
 
       else 
@@ -57,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // input.style.borderColor = '#352f44';
         // input2.style.borderColor = '#352f44';
         for(var i =0; i< buttons.length; i++) 
-          buttons[i].style.backgroundColor = '#352f44';        
+          buttons[i].style.backgroundColor = '#352f44';      
       }
     });
   });

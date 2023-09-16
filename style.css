@@ -15,9 +15,7 @@ form {
   flex-flow: column;
 }
 
-input,
-button,
-a {
+input, button, a {
   outline: none;
 }
 
@@ -52,7 +50,7 @@ main#container {
 }
 
 button {
-  background-color: #2a2438;
+  background-color: #352f44;
   border-color: white;
   box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 1);
   border-radius: 16px;
@@ -102,7 +100,7 @@ a:hover {
   top: 20px;
   right: 20px;
   padding: 10px 15px;
-  background-color: #333333;
+  background-color: #352f44;
   color: white;
   border: none;
   border-radius: 5px;

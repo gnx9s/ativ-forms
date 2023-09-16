@@ -13,6 +13,7 @@ body {
 form {
   display: flex;
   flex-flow: column;
+  max-width: 240px;
 }
 
 input,
@@ -29,7 +30,7 @@ form .linha {
 input {
   border: 4px solid #352f44;
   border-radius: 6px;
-  padding: 6px;
+  padding: 5px;
   transition: .7s;
 }
 
@@ -38,8 +39,8 @@ input:hover {
 }
 
 main#container {
-  padding: 50px;
-  height: 430px;
+  padding: 30px;
+  height: 470px;
   width: 250px;
   border: 1px;
   border-radius: 10px;
@@ -52,12 +53,12 @@ main#container {
 }
 
 button {
-  background-color: #2a2438;
+  background-color: #352f44;
   border-color: white;
   box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 1);
   border-radius: 16px;
   color: #f8f8f2;
-  padding: 10px;
+  padding: 7px;
   margin-top: 12px;
   cursor: pointer;
   transition: .7s;
@@ -73,7 +74,7 @@ a {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   cursor: pointer
@@ -102,7 +103,7 @@ a:hover {
   top: 20px;
   right: 20px;
   padding: 10px 15px;
-  background-color: #333333;
+  background-color: #352f44;
   color: white;
   border: none;
   border-radius: 5px;
@@ -116,4 +117,8 @@ body.darkMode, main#container.darkMode {
 body.darkMode, main#container.darkMode {
   background-color: #142d4c;
   color: white;
+}
+
+.invalid {
+  color: red;
 }
