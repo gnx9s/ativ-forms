@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e3e3e3;
+  background-color: whitesmoke;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: white;
   font-size: 16px;
@@ -35,10 +35,9 @@ main#container {
   padding: 50px;
   height: 450px;
   width: 250px;
+  border-radius: 12px;
   border: solid 1px;
-  border-radius: 10px;
-  background-color: #393e46;
-  box-shadow: 4px 4px 0 0 #393e46;
+  background-color: #1F1F1F;
 }
 
 .linha:last-child {
@@ -46,7 +45,7 @@ main#container {
 }
 
 button {
-  background-color: #393e46;
+  background-color: #1F1F1F;
   border-color: white;
   box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 1);
   border-radius: 16px;
@@ -95,7 +94,7 @@ a:hover {
   top: 20px;
   right: 20px;
   padding: 10px 15px;
-  background-color: #393e46;
+  background-color: #1F1F1F;
   color: white;
   border: none;
   border-radius: 5px;
