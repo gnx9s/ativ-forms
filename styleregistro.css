@@ -2,11 +2,15 @@ body {
   margin: 0;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 100px;
   align-items: center;
-  background-color: whitesmoke;
+  background-image: url(imgs/photo-1470432581262-e7880e8fe79a.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: white;
+  color: black;
   font-size: 16px;
 }
 
@@ -15,29 +19,34 @@ form {
   flex-flow: column;
 }
 
-input, button, a {
+input,
+button,
+a {
   outline: none;
 }
 
 form .linha {
   display: flex;
-  flex-flow: column; 
+  flex-flow: column;
 }
 
 input {
-  border: 4px ;
-  border-radius: 6px;
-  padding: 6px;
+  border: 4px;
+  border-radius: 20px;
+  padding: 10px;
   transition: .7s;
+  background-color: #F2F2F2;
 }
 
 main#container {
   padding: 50px;
-  height: 450px;
-  width: 250px;
-  border-radius: 12px;
-  border: solid 1px;
-  background-color: #1F1F1F;
+  height: 500px;
+  width: 450px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow:  0 0 60px,
+  0 0 60px #ffffff;
 }
 
 .linha:last-child {
@@ -45,15 +54,27 @@ main#container {
 }
 
 button {
-  background-color: #1F1F1F;
-  border-color: white;
+  background-color: white;
   box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 1);
   border-radius: 16px;
-  color: #f8f8f2;
+  color: black;
   padding: 10px;
   margin-top: 12px;
   cursor: pointer;
   transition: .7s;
+}
+
+#return {
+  width: 150px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -62,9 +83,9 @@ button:hover {
 
 a {
   margin-top: 10px;
-  color: white;
+  color: black;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -79,7 +100,9 @@ a:hover {
   margin-left: 22px;
 }
 
-#a2, h2, p {
+#a2,
+h2,
+p {
   justify-content: center;
   text-align: center;
 }
@@ -90,22 +113,98 @@ a:hover {
 }
 
 .modeToggle {
+  width: 150px;
   position: fixed;
   top: 20px;
   right: 20px;
   padding: 10px 15px;
-  background-color: #1F1F1F;
-  color: white;
+  background-color: white;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-body.darkMode, main#container.darkMode {
+body.darkMode,
+main#container.darkMode {
   background-color: #444;
 }
 
-body.darkMode, main#container.darkMode {
+body.darkMode,
+main#container.darkMode {
   background-color: #142d4c;
   color: white;
+}
+
+.invalid, input[type="checkbox"].invalid + label {
+  color: red;
+  text-decoration: underline;
+}
+
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
 }
