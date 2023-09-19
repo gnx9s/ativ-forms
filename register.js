@@ -5,7 +5,7 @@ const processForm = (e) => {
   const email = document.getElementById('email');
   const password = document.getElementById('password');
   const repeatPassword = document.getElementById('repeatPassword');
-  const deacordo = document.getElementById('deacordo');
+  const deacordo = document.getElementById('cbx');
 
   if (name.value.trim().length === 0 || name.value.trim().length < 5) {
     name.classList.add('invalid');
@@ -25,7 +25,7 @@ const processForm = (e) => {
     return;
   }
 
-  if (!deacordo.checked) {
+  if (!cbx.checked) {
     deacordo.classList.add('invalid');
     return;
   }
@@ -35,7 +35,7 @@ const processForm = (e) => {
     Senha: password.value.trim(),
     Email: email.value.trim()
   };
-  
+  console.log(user);
 }
 
   const errorClear = (e) =>
