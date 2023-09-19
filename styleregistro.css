@@ -113,9 +113,10 @@ p {
   text-align: center;
 }
 
-#login {
+#signup {
   text-align: center;
   font-size: 24px;
+  font-weight: 700;
 }
 
 .modeToggle {
@@ -140,6 +141,10 @@ body.darkMode,
 main#container.darkMode {
   background-color: #142d4c;
   color: white;
+}
+
+label {
+  padding: 5px;
 }
 
 .invalid, input[type="checkbox"].invalid + label {
