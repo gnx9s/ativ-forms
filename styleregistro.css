@@ -8,8 +8,7 @@ body {
   margin: 0;
   min-height: 100vh;
   display: flex;
-  justify-content: left;
-  margin-left: 100px;
+  justify-content: center;
   align-items: center;
   background-image: url(imgs/photo-1470432581262-e7880e8fe79a.avif);
   background-repeat: no-repeat;
@@ -51,8 +50,6 @@ main#container {
   background-color: #FFFFFF;
   border-radius: 30px;
   background: #ffffff;
-  box-shadow:  0 0 60px,
-  0 0 60px #ffffff;
 }
 
 .linha:last-child {
@@ -147,7 +144,7 @@ label {
   padding: 5px;
 }
 
-.invalid, input[type="checkbox"].invalid + label {
+.invalid{
   color: red;
   text-decoration: underline;
 }
@@ -156,8 +153,8 @@ label {
   cursor: pointer;
   position: relative;
   margin: auto;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   -webkit-tap-highlight-color: transparent;
   transform: translate3d(0, 0, 0);
 }

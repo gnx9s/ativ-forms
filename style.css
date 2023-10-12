@@ -8,8 +8,7 @@ body {
   margin: 0;
   min-height: 100vh;
   display: flex;
-  justify-content: left;
-  margin-left: 100px;
+  justify-content: center;
   align-items: center;
   background-image: url(imgs/photo-1470432581262-e7880e8fe79a.avif);
   background-repeat: no-repeat;
@@ -51,8 +50,7 @@ main#container {
   background-color: #FFFFFF;
   border-radius: 30px;
   background: #ffffff;
-  box-shadow:  0 0 60px,
-  0 0 60px #ffffff;
+  border-color: black;
 }
 
 .linha:last-child {
@@ -60,8 +58,6 @@ main#container {
 }
 
 button {
-  background-color: white;
-  box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 1);
   border-radius: 16px;
   color: black;
   padding: 10px;
