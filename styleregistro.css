@@ -67,7 +67,7 @@ button {
   transition: .7s;
 }
 
-#return {
+.return {
   width: 160px;
   position: fixed;
   bottom: 30px;

@@ -116,3 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setThemeFromLocalStorage();
 });
+
+function home() {
+  window.location.href = 'index.html';
+}

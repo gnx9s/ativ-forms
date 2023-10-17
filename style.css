@@ -130,3 +130,15 @@ main#container.darkMode {
   text-decoration: underline;
 }
 
+.return {
+  width: 160px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
